@@ -830,7 +830,7 @@ body {
     .nav-links.active + .user-section {
         display: flex;
         opacity: 1;
-        margin-top: calc(110vh + 100px); /* Adjust this value to position the logout button */
+        margin-top: calc(110vh + 100px); 
     }
 
     #logoutBtn {
@@ -855,7 +855,6 @@ body {
         transform: rotate(-45deg) translate(7px, -7px);
     }
 
-    /* Animation delays for menu items */
     .nav-links a:nth-child(1) { transition-delay: 0.1s; }
     .nav-links a:nth-child(2) { transition-delay: 0.2s; }
     .nav-links a:nth-child(3) { transition-delay: 0.3s; }
