@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar setup -->
+
+    <nav class="navbar">
+        <div class="nav-brand">Quizzy</div>
+        <div class="nav-links">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#categories">Categories</a>
+        </div>
+        <div id="userSection" class="user-section">
+                <button id="logoutBtn" class="logout-btn">Logout</button>
+        </div>    
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- Header section-->
+    <div class="header-section" id="home">
+        <div class="header-content">
+            <h1>Quiz Website</h1>
+            <p id="welcomeMessage">Welcome to the ultimate quiz experience!</p>
+            <button id="startQuizBtn" class="start-quiz-btn">Start Quiz</button>
+        </div>
+    </div>
+
+    <!-- Quiz Categories Section -->
+
+    <section class="categories-section" id="categories">
+        <h2>Quiz Categories</h2>
+        <div class="categories-grid">
+            <div class="category-card">
+                <i class="fas fa-atom"></i>
+                <h3>Science</h3>
+            </div>
+            <div class="category-card">
+                <i class="fas fa-landmark"></i>
+                <h3>History</h3>
+            </div>
+            <div class="category-card">
+                <i class="fas fa-laptop-code"></i>
+                <h3>Technology</h3>
+            </div>
+            <div class="category-card">
+                <i class="fas fa-basketball-ball"></i>
+                <h3>Sports</h3>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- About Us Section -->
+
+    <section class="about-section" id="about">
+        <div class="about-container">
+            <h2 class="section-title">About Us</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="images/about-us.png" alt="Quiz Platform Interface" class="responsive-img">
+                </div>
+                <div class="about-text">
+                    <h3>Welcome to Quizzy</h3>
+                    <p class="lead-text">Your go-to destination for engaging and educational quizzes!</p>
+                    <div class="feature-grid">
+                        <div class="feature-item">
+                            <i class="fas fa-brain feature-icon"></i>
+                            <h4>Learn & Grow</h4>
+                            <p>Expand your knowledge across various subjects with our carefully curated questions.</p>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-trophy feature-icon"></i>
+                            <h4>Compete & Win</h4>
+                            <p>Challenge yourself and others while earning points and achievements.</p>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-users feature-icon"></i>
+                            <h4>Community</h4>
+                            <p>Join a vibrant community of knowledge enthusiasts from around the world.</p>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-mobile-alt feature-icon"></i>
+                            <h4>Play Anywhere</h4>
+                            <p>Access our platform on any device, anytime, anywhere.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-grid">
+                <!-- Company Info -->
+                <div class="footer-section">
+                    <h3>Quizzy</h3>
+                    <p class="footer-description">Empowering minds through engaging quizzes and continuous learning.</p>
+                    <div class="contact-info">
+                        <p><i class="fas fa-envelope"></i> contact@quizzy.com</p>
+                        <p><i class="fas fa-phone"></i> (123) 456-7890</p>
+                        <p><i class="fas fa-location-dot"></i> 123 Quiz Street, Knowledge City</p>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#categories">Quiz Categories</a></li>
+                        <li><a href="#leaderboard">Leaderboard</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Connect With Us -->
+                <div class="footer-section">
+                    <h3>Connect With Us</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                    <div class="newsletter">
+                        <h4>Subscribe to Our Newsletter</h4>
+                        <form class="newsletter-form">
+                            <input type="email" placeholder="Enter your email" required>
+                            <button type="submit" class="btn btn-primary">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <div class="footer-bottom-content">
+                <p>&copy; 2025 Quizzy. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="/privacy">Privacy Policy</a>
+                    <a href="/terms">Terms of Service</a>
+                    <a href="/cookies">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Category Selection Model -->
+    <div id="categoryModel" class="pop-up">
+        <div class="pop-up-content">
+            <h2>Select Category</h2>
+            <div class="category-options">
+                <button data-category="science">Science</button>
+                <button data-category="history">History</button>
+                <button data-category="technology">Technology</button>
+                <button data-category="sports">Sports</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/auth.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

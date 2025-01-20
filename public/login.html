@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Trivia Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar setup -->
+     
+    <nav class="navbar-register">
+        <div class="nav-brand-register">Quizzy</div>
+        <div class="nav-links-register">
+            <a href="signup.html">Sign Up</a>
+        </div>
+    </nav>
+
+    <!--Main form section-->
+
+    <main class="container">
+        <div class="form-container">
+            <h2>Login</h2>
+            <form id="loginForm" class="auth-form">
+                <div class="form-group">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div id="errorMessage" class="error-message"></div>
+                <button type="submit" class="btn btn-primary">Login</button>
+            </form>
+            <p class="form-footer">
+                Don't have an account? <a href="signup.html">Sign up here</a>
+            </p>
+        </div>
+    </main>
+
+    <script src="js/login.js"></script>
+</body>
+</html>
